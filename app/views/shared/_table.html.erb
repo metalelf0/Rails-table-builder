@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <%- if table.headers -%>
+      <tr>
+        <%- table.headers.each do |header| -%>
+          <th><%= header %></th>
+        <% end %>
+      </tr>
+    <% end %>
+  </thead>
+  <tbody>
+    <%- if table.rows -%>
+      <%- table.rows.each do |row| -%>
+        <tr>
+          <% row.each do |row_element| %> 
+            <td><%= row_element %></td>
+          <% end %>
+        </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+
