@@ -1,4 +1,5 @@
 db/schema.rb
 db/*.sqlite3
 *.swp
+log/*
 
