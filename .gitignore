@@ -1,5 +1,4 @@
-db/schema.rb
+.bundle
 db/*.sqlite3
-*.swp
-log/*
-
+log/*.log
+tmp/**/*
