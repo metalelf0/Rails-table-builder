@@ -1,4 +1,5 @@
 require File.join(File.dirname(__FILE__), '..', 'spec_helper')
+require File.join(::Rails.root.to_s, 'lib', 'table')
 
 describe Table do
   

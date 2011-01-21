@@ -1,7 +1,8 @@
-require 'spec_helper'
+require "spec_helper"
 
 describe PeopleController do
   describe "routing" do
+
     it "recognizes and generates #index" do
       { :get => "/people" }.should route_to(:controller => "people", :action => "index")
     end
@@ -19,15 +20,16 @@ describe PeopleController do
     end
 
     it "recognizes and generates #create" do
-      { :post => "/people" }.should route_to(:controller => "people", :action => "create") 
+      { :post => "/people" }.should route_to(:controller => "people", :action => "create")
     end
 
     it "recognizes and generates #update" do
-      { :put => "/people/1" }.should route_to(:controller => "people", :action => "update", :id => "1") 
+      { :put => "/people/1" }.should route_to(:controller => "people", :action => "update", :id => "1")
     end
 
     it "recognizes and generates #destroy" do
-      { :delete => "/people/1" }.should route_to(:controller => "people", :action => "destroy", :id => "1") 
+      { :delete => "/people/1" }.should route_to(:controller => "people", :action => "destroy", :id => "1")
     end
+
   end
 end
